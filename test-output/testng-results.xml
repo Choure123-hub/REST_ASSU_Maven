@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2126" started-at="2023-05-11T14:43:15 IST" finished-at="2023-05-11T14:43:17 IST">
+  <suite name="Default suite" duration-ms="1667" started-at="2023-05-12T22:17:22 IST" finished-at="2023-05-12T22:17:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2126" started-at="2023-05-11T14:43:15 IST" finished-at="2023-05-11T14:43:17 IST">
+    <test name="Default test" duration-ms="1667" started-at="2023-05-12T22:17:22 IST" finished-at="2023-05-12T22:17:24 IST">
       <class name="Day5.FileUploadAndDownload">
-        <test-method status="PASS" signature="SingleFileUpload()[pri:1, instance:Day5.FileUploadAndDownload@11438d26]" name="SingleFileUpload" duration-ms="1983" started-at="2023-05-11T14:43:15 IST" finished-at="2023-05-11T14:43:17 IST">
+        <test-method status="PASS" signature="SingleFileUpload()[pri:1, instance:Day5.FileUploadAndDownload@11438d26]" name="SingleFileUpload" duration-ms="1547" started-at="2023-05-12T22:17:22 IST" finished-at="2023-05-12T22:17:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SingleFileUpload -->
-        <test-method status="PASS" signature="MultipleFilesUpload()[pri:2, instance:Day5.FileUploadAndDownload@11438d26]" name="MultipleFilesUpload" duration-ms="74" started-at="2023-05-11T14:43:17 IST" finished-at="2023-05-11T14:43:17 IST">
+        <test-method status="PASS" signature="MultipleFilesUpload()[pri:2, instance:Day5.FileUploadAndDownload@11438d26]" name="MultipleFilesUpload" duration-ms="68" started-at="2023-05-12T22:17:24 IST" finished-at="2023-05-12T22:17:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MultipleFilesUpload -->
-        <test-method status="PASS" signature="FileDownload()[pri:3, instance:Day5.FileUploadAndDownload@11438d26]" name="FileDownload" duration-ms="27" started-at="2023-05-11T14:43:17 IST" finished-at="2023-05-11T14:43:17 IST">
+        <test-method status="PASS" signature="FileDownload()[pri:3, instance:Day5.FileUploadAndDownload@11438d26]" name="FileDownload" duration-ms="21" started-at="2023-05-12T22:17:24 IST" finished-at="2023-05-12T22:17:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FileDownload -->
