@@ -31,7 +31,8 @@ public class HeaderDemo {
 		       .and()
 		       .header("Content-Encoding", "gzip")
 		       .and()
-		       .header("Server", "gws");
+		       .header("Server", "gws")
+		       .log().headers();
 			
 		}
 	@Test(priority=2)
@@ -42,6 +43,7 @@ public class HeaderDemo {
 		
 		.when()
 		.get("https://www.google.com/");
+//  get single header info
 //		String headervalue = res.getHeader("Content-Type");
 //		System.out.println("the value of content-type header  is"+headervalue);
 		

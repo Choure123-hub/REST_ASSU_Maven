@@ -1,6 +1,7 @@
 package Day6;
 import static io.restassured.RestAssured.*;
 
+
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
@@ -29,7 +30,7 @@ public class SerilizationDeserilization
 		String coursesArr[]= {"C","C++"};
 		stupojo.setCourses(coursesArr);
 		
-		//convert java----------> object json object(serialization)
+		//convert java (POJO)----------> (json) object     (serialization)
 		ObjectMapper ObjMapper=new ObjectMapper();
 		
 		String jsonData = ObjMapper.writerWithDefaultPrettyPrinter().writeValueAsString(stupojo);
@@ -53,11 +54,11 @@ public class SerilizationDeserilization
 		
 		Student stupojo = ObjMapper.readValue(jsondata, Student.class);//convert json to pojo
 		
-		System.out.println("Names"+stupojo.getName());
-		System.out.println("location"+stupojo.getLocation());
-		System.out.println("phone"+stupojo.getPhone());
-		System.out.println("courses"+stupojo.getCourses()[0]);
-		System.out.println("courses"+stupojo.getCourses()[1]);
+		System.out.println("Names "+stupojo.getName());
+		System.out.println("location "+stupojo.getLocation());
+		System.out.println("phone "+stupojo.getPhone());
+		System.out.println("courses "+stupojo.getCourses()[0]);
+		System.out.println("courses "+stupojo.getCourses()[1]);
 	}
 	
 	

@@ -14,7 +14,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class ParsingJsonResponseData {
-	@Test(priority=1)
+	//@Test(priority=1)
 void testJsonResponse()
 {
 		//approach1
@@ -32,8 +32,8 @@ void testJsonResponse()
           .statusCode(200)
           .header("Content-Type", "application/json; charset=utf-8")
           .body("[3].title",equalTo("the Lord of Rings"));*/
-		
-          //Approach 2
+	//x[3].title
+          //Approach 2 important
 		Response res = given()
 		.contentType(ContentType.JSON)
 		.when()

@@ -3,8 +3,10 @@ package Day1;
 import  org.testng.annotations.Test;
 
 
+import com.aventstack.extentreports.gherkin.model.Then;
 
 import groovy.util.logging.Log;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 
@@ -20,13 +22,15 @@ public class HTTPRequests
 	@Test(priority=1)
 void getUsers()
 {
+		
 	given()
-	
+	.log().all().header("Content-Type","application/json")
 	.when()
 	.get("https://reqres.in/api/users?page=2")
 	.then()
 	.statusCode(200)
 	.body("page",equalTo(2))
+	.body("data[0].first_name",equalTo("Michael"))
 	.log().all();
 }
 	@Test(priority=2)
@@ -35,9 +39,11 @@ void getUsers()
 		HashMap data=new HashMap();
 		data.put("name", "bhagvanta");
 		data.put("job", "Engineer");
+		
 		id=given()
 		.contentType("application/json")
 		.body(data)
+		
 		.when()
 		.post("https://reqres.in/api/users")
 		.jsonPath().getInt("id");
@@ -52,6 +58,7 @@ void getUsers()
 		HashMap data=new HashMap();
 		data.put("name", "sandhya");
 		data.put("job", "teacher");
+		
 		given()
 		.contentType("application/json")
 		.body(data)
@@ -64,7 +71,7 @@ void getUsers()
 		.statusCode(200)
 		.log().all();
 	}
-	@Test(priority=4)
+	//@Test(priority=4)
 	void deleteUser() {
 		given()
 		.when()

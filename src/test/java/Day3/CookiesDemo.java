@@ -14,21 +14,23 @@ import io.restassured.response.Response;
 public class CookiesDemo {
 
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	void testCookies()
 	{
 		given()
 		
 		
 		.when()
+		
 		.get("https://www.google.com/")
 		
 		.then()
-		.cookie("AEC","AUEFqZd1gwFDu98y505gQOQ_mkaAtqmN7XxQD8W_VdToTAZcRmQ8U50P0iY")
+	.cookie("AEC","Ae3NU9OHTAs9FsYpuw8ws_yP16GDo4OBQnaA31xLTKzl1uq5uafWA7cCrpY")
+		//.log().cookies()
 		.log().all();
 		
 	}
-	@Test(priority=2)
+	//@Test(priority=2)
 	void geCookiesInfo()
 	{
 	Response res=given()

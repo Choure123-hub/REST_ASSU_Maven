@@ -20,9 +20,9 @@ public class LogingDemo {
 		
 		
 		.then()
-		//.log().all();
+		.log().all();
 		//.log().body();
 		//.log().cookies();
-		.log().headers();
+		//.log().headers();
 	}
 }

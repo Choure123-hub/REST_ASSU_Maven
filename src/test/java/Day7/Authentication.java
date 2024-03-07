@@ -1,5 +1,6 @@
 package Day7;
 import static io.restassured.RestAssured.*;
+
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
@@ -56,7 +57,7 @@ public class Authentication {
 	void testBeareTokenAuthontication()
 	{
 		
-		String bearerTokrn="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";
+		String bearerTokrn="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";
 		
 		given()
 		.headers("Authorization","Bearer "+bearerTokrn)
@@ -70,7 +71,7 @@ public class Authentication {
 		.log().all();
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	void testOAuth1Authentication()
 	
 	{
@@ -102,7 +103,7 @@ public class Authentication {
 		.statusCode(200)
 		.log().all();
 	}
-	@Test
+	//@Test
 	void testAPIKeyAuthentication()
 	{
 		//Method1................

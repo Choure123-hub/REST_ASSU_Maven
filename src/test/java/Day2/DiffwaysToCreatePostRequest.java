@@ -90,13 +90,13 @@ public class DiffwaysToCreatePostRequest {
 		given()
 		
 		.when()
-		.delete(" http://localhost:3000/users/23")
+		.delete(" http://localhost:3000/users/26")
 		.then()
 		.statusCode(200);
 	}
 	// 3) Post request body using POJO Class(plain old java object)..........>most important
 	
-		//@Test(priority=1)
+		@Test(priority=1)
 		 void testPostusingPOJO() {
 			
 			Pojo_PostRequest data=new Pojo_PostRequest();
@@ -112,7 +112,7 @@ public class DiffwaysToCreatePostRequest {
 			.body(data)
 			
 			.when()
-			.post(" http://localhost:3000/users")
+			.post("http://localhost:3000/users")
 			
 			.then()
 			.statusCode(201)
@@ -124,18 +124,18 @@ public class DiffwaysToCreatePostRequest {
 			.header("Content-Type", "application/json; charset=utf-8")
 			.log().all();
 		}
-		//@Test(priority=2)
+		@Test(priority=2)
 		void testDelete1() {
 			given()
 			
 			.when()
-			.delete(" http://localhost:3000/users/23")
+			.delete(" http://localhost:3000/users/30")
 			.then()
 			.statusCode(200);
 		}
 		// 3) Post request body using External JSON file
 		
-			@Test(priority=1)
+			//@Test(priority=1)
 			 void testPostusingExternal_JSONfile() throws FileNotFoundException 
 			{
 				File f=new File(".\\body.json");
@@ -166,7 +166,7 @@ public class DiffwaysToCreatePostRequest {
 			
 			
 			
-			@Test(priority=2)
+			//@Test(priority=2)
 			void testDelete11() {
 				given()
 				
