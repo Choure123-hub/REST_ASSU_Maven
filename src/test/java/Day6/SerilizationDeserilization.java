@@ -39,7 +39,7 @@ public class SerilizationDeserilization
 	
 	
 	// json----------------->POJO     (D-Serialization)
-	@Test
+	//@Test
 	void converJson2Pojo() throws JsonProcessingException
 	{
 		String jsondata="{\r\n"

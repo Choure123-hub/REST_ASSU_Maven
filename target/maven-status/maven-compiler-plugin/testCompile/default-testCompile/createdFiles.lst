@@ -26,6 +26,7 @@ api\test\PetTests.class
 Day3\LogingDemo.class
 api\payload\User.class
 api\endpoints\Routes.class
+Day1\practice.class
 Day4\ParsingJsonResponseData.class
 Rest_assured_Practice\day1.class
 api\endpoints\UserEndPoints2.class
