@@ -343,3 +343,8 @@
 20:20:15.510 [main] INFO  api.test.UserTests2 - ********** User updated ***************
 20:20:17.117 [main] INFO  api.test.UserTests2 - **********   Deleting User  ***************
 20:20:18.530 [main] INFO  api.test.UserTests2 - ********** User deleted ***************
+12:15:46.627 [main] DEBUG api.test.StoreTests - debugging.....
+12:15:46.643 [main] INFO  api.test.StoreTests - ***********************Creating User**************
+12:15:50.509 [main] INFO  api.test.StoreTests - ***********************User is Created**************
+12:15:50.515 [main] INFO  api.test.StoreTests - ********** Reading User Info ***************
+12:15:52.310 [main] INFO  api.test.StoreTests - **********User info  is displayed ***************
