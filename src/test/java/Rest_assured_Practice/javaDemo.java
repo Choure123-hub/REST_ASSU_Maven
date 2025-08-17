@@ -10,5 +10,13 @@ public static void main(String[] args) {
 		}
 	System.out.println(rev);
 	System.out.println(org);
+	if (org.equals(rev))
+	{
+		System.out.println("is pallindrome");
+	}
+	else
+	{
+		System.out.println("not pallindrome");
+	}
 }
 }
