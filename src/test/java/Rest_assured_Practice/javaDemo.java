@@ -9,5 +9,6 @@ public static void main(String[] args) {
 			rev=rev+org.charAt(i);
 		}
 	System.out.println(rev);
+	System.out.println(org);
 }
 }
